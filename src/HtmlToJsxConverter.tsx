@@ -7,7 +7,7 @@ const HtmlToJsxConverter: React.FC = () => {
   const [jsxOutput, setJsxOutput] = useState<string>("");
 
   return (
-    <div className="p-4 mx-auto">
+    <div className="p-4 mx-auto sm:flex sm:gap-x-4">
       <HtmlToJSXForm setJsxOutput={setJsxOutput} />
       <Output jsxOutput={jsxOutput} />
     </div>

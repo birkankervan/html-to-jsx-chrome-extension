@@ -5,9 +5,11 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
-    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "build:chrome": "vite build --mode chrome",
+    "build:web": "vite build --mode development",
+    "preview:chrome": "vite preview --config vite.config.ts --outDir dist/chrome",
+    "preview:web": "vite preview --config vite.config.ts --outDir dist/web",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0"
   },
   "dependencies": {
     "react": "^18.3.1",

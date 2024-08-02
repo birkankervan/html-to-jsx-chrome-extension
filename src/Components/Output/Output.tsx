@@ -25,7 +25,7 @@ const Output: React.FC<OutputProps> = memo(({ jsxOutput }) => {
   }
 
   return (
-    <div className="relative output">
+    <div className="relative output sm:-mt-2 sm:w-1/2 ">
       <button
         className="absolute top-2 right-2 text-slate-100 hover:text-orange-500 transition-all"
         onClick={handleCopy}

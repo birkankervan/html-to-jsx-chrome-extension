@@ -15,7 +15,7 @@ function App() {
   }, [isDarkMode]);
 
   return (
-    <div className="container w-[25rem] p-1  dark:bg-gray-900 dark:text-white">
+    <div className="container w-[25rem] sm:w-full sm:mx-auto p-1  dark:bg-gray-900 dark:text-white">
       <Header isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
       <HtmlToJsxConverter />
       <Footer />

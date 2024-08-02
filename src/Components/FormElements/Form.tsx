@@ -50,14 +50,9 @@ const HtmlToJSXForm = ({
 
   return (
     <form
-      className="flex flex-col gap-2 dark:bg-gray-900 dark:text-white"
+      className="flex flex-col sm:w-1/2 gap-2  dark:bg-gray-900 dark:text-white"
       onSubmit={handleSubmit(onSubmit)}
     >
-      <FormTextarea
-        name="htmlInput"
-        control={control}
-        placeholder="Enter HTML here..."
-      />
       <FormCheckbox
         name="isReactComponent"
         control={control}
@@ -85,6 +80,12 @@ const HtmlToJSXForm = ({
           />
         </>
       )}
+      <FormTextarea
+        name="htmlInput"
+        control={control}
+        placeholder="Enter HTML here..."
+      />
+
       <button
         className="btn btn-primary mb-4 mt-2 px-4 py-2 bg-blue-500 text-white rounded dark:bg-blue-700"
         type="submit"

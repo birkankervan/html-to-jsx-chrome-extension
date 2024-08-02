@@ -3,7 +3,7 @@ import LinkedinIcon from "../Icons/Linkedin";
 
 const Footer = () => {
   return (
-    <footer className="flex justify-center gap-x-2 items-center p-4 bg-gray-100 dark:bg-gray-800 dark:text-white mb-3">
+    <footer className="flex justify-center gap-x-2 items-center p-4 bg-gray-100 dark:bg-gray-800 dark:text-white mb-3 rounded-lg">
       <a
         href="https://github.com/birkankervan/html-to-jsx-chrome-extension"
         target="_blank"
