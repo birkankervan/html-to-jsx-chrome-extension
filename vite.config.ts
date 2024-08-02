@@ -4,7 +4,7 @@ import { defineConfig, mergeConfig, UserConfig } from "vite";
 import { VitePluginRadar } from "vite-plugin-radar";
 import manifest from "./manifest.json";
 
-const gTag = process.env.VITE_GOOGLE_AN;
+const gTag = "G-69YWF3G22K";
 
 const commonConfig: UserConfig = {
   plugins: [react()],
