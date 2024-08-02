@@ -1,9 +1,7 @@
-import { memo } from "react";
-
-const Github = () => (
+const GithubIcon = () => (
   <svg
-    width="15"
-    height="15"
+    width="24"
+    height="24"
     viewBox="0 0 15 15"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -17,5 +15,4 @@ const Github = () => (
   </svg>
 );
 
-const GithubIcon = memo(Github);
 export default GithubIcon;

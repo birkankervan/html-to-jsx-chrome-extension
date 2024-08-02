@@ -1,6 +1,4 @@
-import { memo } from "react";
-
-const Clear = () => (
+const ClearIcon = () => (
   <svg
     width="15"
     height="15"
@@ -17,5 +15,4 @@ const Clear = () => (
   </svg>
 );
 
-const ClearIcon = memo(Clear);
 export default ClearIcon;

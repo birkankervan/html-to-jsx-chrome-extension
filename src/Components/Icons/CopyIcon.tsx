@@ -1,6 +1,4 @@
-import { memo } from "react";
-
-const Copy = () => (
+const CopyIcon = () => (
   <svg
     width="15"
     height="15"
@@ -17,5 +15,4 @@ const Copy = () => (
   </svg>
 );
 
-const CopyIcon = memo(Copy);
 export default CopyIcon;
