@@ -21,12 +21,18 @@ const crxConfig: UserConfig = {
   build: {
     outDir: "dist/chrome",
   },
+  define: {
+    BUILD_TYPE: JSON.stringify("chrome"),
+  },
 };
 
 // Web uygulaması yapılandırması
 const webConfig: UserConfig = {
   build: {
     outDir: "dist/web",
+  },
+  define: {
+    BUILD_TYPE: JSON.stringify("web"),
   },
 };
 
