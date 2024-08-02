@@ -1,4 +1,3 @@
-
 # HTML to JSX Chrome Extension
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
@@ -70,7 +69,7 @@ The primary purpose of this extension is to help developers working with React b
 
 ## 📸 Screenshots
 
-![Extension Screenshot](screenshots/screenshot1.png)
+![Extension Screenshot](img/ss.png)
 
 ## 👨‍💻 Author
 
