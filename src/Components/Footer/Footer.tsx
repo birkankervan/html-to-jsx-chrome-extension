@@ -3,13 +3,22 @@ import LinkedinIcon from "../Icons/Linkedin";
 
 const Footer = () => {
   return (
-    <footer className="flex justify-center gap-x-2">
+    <footer className="flex justify-center gap-x-2 items-center ">
       <a
         href="https://github.com/birkankervan/html-to-jsx-chrome-extension"
         target="_blank"
         rel="noopener noreferrer"
       >
         <GithubIcon />
+      </a>
+      <a href="https://www.buymeacoffee.com/ebirkan" target="_blank">
+        <img
+          src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png"
+          alt="Buy Me A Coffee"
+          height={20}
+          className="w-36"
+          loading="lazy"
+        />
       </a>
       <a
         href="https://www.linkedin.com/in/emre-birkan-kervan"
