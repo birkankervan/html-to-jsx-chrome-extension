@@ -1,9 +1,11 @@
 import { crx } from "@crxjs/vite-plugin";
 import react from "@vitejs/plugin-react-swc";
 import { defineConfig, mergeConfig, UserConfig } from "vite";
+import { VitePluginRadar } from "vite-plugin-radar";
 import manifest from "./manifest.json";
 
-// Ortak yapılandırma
+const gTag = process.env.VITE_GOOGLE_AN;
+
 const commonConfig: UserConfig = {
   plugins: [react()],
   build: {
@@ -15,7 +17,6 @@ const commonConfig: UserConfig = {
   },
 };
 
-// Chrome uzantısı yapılandırması
 const crxConfig: UserConfig = {
   plugins: [crx({ manifest })],
   build: {
@@ -26,7 +27,6 @@ const crxConfig: UserConfig = {
   },
 };
 
-// Web uygulaması yapılandırması
 const webConfig: UserConfig = {
   build: {
     outDir: "dist/web",
@@ -34,9 +34,16 @@ const webConfig: UserConfig = {
   define: {
     BUILD_TYPE: JSON.stringify("web"),
   },
+  plugins: [
+    VitePluginRadar({
+      enableDev: true,
+      analytics: {
+        id: gTag as string,
+      },
+    }),
+  ],
 };
 
-// Yapılandırmaları birleştir
 export default defineConfig(({ mode }) => {
   if (mode === "chrome") {
     return mergeConfig(commonConfig, crxConfig);
