@@ -49,7 +49,10 @@ const HtmlToJSXForm = ({
   const isReactComponent = watch("isReactComponent");
 
   return (
-    <form className="flex flex-col gap-2  " onSubmit={handleSubmit(onSubmit)}>
+    <form
+      className="flex flex-col gap-2 dark:bg-gray-900 dark:text-white"
+      onSubmit={handleSubmit(onSubmit)}
+    >
       <FormTextarea
         name="htmlInput"
         control={control}
@@ -83,7 +86,7 @@ const HtmlToJSXForm = ({
         </>
       )}
       <button
-        className="btn btn-primary mb-4 mt-2 px-4 py-2 bg-blue-500 text-white rounded"
+        className="btn btn-primary mb-4 mt-2 px-4 py-2 bg-blue-500 text-white rounded dark:bg-blue-700"
         type="submit"
       >
         Convert to JSX

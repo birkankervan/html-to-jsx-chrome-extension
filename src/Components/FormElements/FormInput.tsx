@@ -16,7 +16,7 @@ const FormInput: React.FC<FormInputProps> = ({
         render={({ field }) => (
           <>
             <input
-              className="input input-bordered w-full p-2 border border-gray-300 rounded"
+              className="input input-bordered w-full p-2 border border-gray-300 rounded dark:bg-gray-800 dark:border-gray-600 dark:text-white"
               placeholder={placeholder}
               {...field}
               value={field.value as string}

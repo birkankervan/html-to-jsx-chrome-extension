@@ -16,7 +16,7 @@ const FormTextarea: React.FC<FormTextareaProps> = ({
         render={({ field }) => (
           <>
             <textarea
-              className="textarea textarea-bordered w-full h-40 p-2 border border-gray-300 rounded"
+              className="textarea textarea-bordered w-full h-40 p-2 border border-gray-300 rounded dark:bg-gray-800 dark:border-gray-600 dark:text-white"
               placeholder={placeholder}
               {...field}
               value={field.value as string}

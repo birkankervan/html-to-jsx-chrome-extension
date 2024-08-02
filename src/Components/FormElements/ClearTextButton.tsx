@@ -1,20 +1,19 @@
 import { memo } from "react";
 import ClearIcon from "../Icons/ClearIcon";
 
-export const ClearTextButton = memo(
-  ({
-    onChange,
-    value,
-  }: {
-    onChange: (value: string) => void;
-    value: string;
-  }) => {
+interface ClearTextButtonProps {
+  onChange: (value: string) => void;
+  value: string;
+}
+
+export const ClearTextButton: React.FC<ClearTextButtonProps> = memo(
+  ({ onChange, value }) => {
     if (!value) return null;
 
     return (
       <button
         type="button"
-        className="absolute top-3 right-5 text-slate-800  hover:text-orange-500 transition-all"
+        className="absolute top-3 right-5 text-slate-800 dark:text-slate-200 hover:text-orange-500 dark:hover:text-orange-400 transition-all"
         onClick={() => onChange("")}
       >
         <ClearIcon />

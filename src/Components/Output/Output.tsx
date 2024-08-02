@@ -4,8 +4,13 @@ import { okaidia } from "react-syntax-highlighter/dist/esm/styles/prism";
 import CopyIcon from "../Icons/CopyIcon";
 import { NotificationComponent } from "../Notification/Notification";
 
-const Output = memo(({ jsxOutput }: { jsxOutput: string }) => {
+interface OutputProps {
+  jsxOutput: string;
+}
+
+const Output: React.FC<OutputProps> = memo(({ jsxOutput }) => {
   const [showNotification, setShowNotification] = useState<boolean>(false);
+
   const handleCopy = () => {
     navigator.clipboard.writeText(jsxOutput).then(() => {
       setShowNotification(true);
@@ -22,7 +27,7 @@ const Output = memo(({ jsxOutput }: { jsxOutput: string }) => {
   return (
     <div className="relative output">
       <button
-        className="absolute top-2 right-2 text-slate-100  hover:text-orange-500 transition-all"
+        className="absolute top-2 right-2 text-slate-100 hover:text-orange-500 transition-all"
         onClick={handleCopy}
       >
         <CopyIcon />

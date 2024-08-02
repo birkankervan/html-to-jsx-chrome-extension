@@ -9,7 +9,7 @@ const FormSelect: React.FC<FormSelectProps> = ({ name, control, options }) => {
       control={control}
       render={({ field }) => (
         <select
-          className="input input-bordered p-2 border border-gray-300 rounded"
+          className="input input-bordered p-2 border border-gray-300 rounded dark:bg-gray-800 dark:border-gray-600 dark:text-white"
           {...field}
           value={field.value as string}
         >
