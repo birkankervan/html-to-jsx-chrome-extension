@@ -1,10 +1,11 @@
 import { crx } from "@crxjs/vite-plugin";
 import react from "@vitejs/plugin-react-swc";
-import { defineConfig, mergeConfig, UserConfig } from "vite";
+import { defineConfig, loadEnv, mergeConfig, UserConfig } from "vite";
 import { VitePluginRadar } from "vite-plugin-radar";
 import manifest from "./manifest.json";
 
-const gTag = "G-69YWF3G22K";
+const env = loadEnv(process.cwd(), "");
+const gTag = env.VITE_GOOGLE_AN;
 
 const commonConfig: UserConfig = {
   plugins: [react()],
