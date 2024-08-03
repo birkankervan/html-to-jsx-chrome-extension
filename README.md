@@ -1,7 +1,7 @@
 # HTML to JSX Chrome Extension
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
-![Version](https://img.shields.io/badge/version-1.0.0-brightgreen.svg)
+![Version](https://img.shields.io/badge/version-1.0.16-brightgreen.svg)
 
 ## 📖 Overview
 
@@ -29,7 +29,7 @@ The primary purpose of this extension is to help developers working with React b
 - **Tailwind CSS**: For styling the application.
 - **react-hook-form**: For managing form state and validation.
 - **react-syntax-highlighter**: For displaying the converted JSX with syntax highlighting.
-- **FontAwesome**: For icons used in the application.
+- **Radix Icons**: For icons used in the application.
 
 ## 📦 Installation
 
@@ -43,13 +43,13 @@ The primary purpose of this extension is to help developers working with React b
 2. **Install the dependencies:**
 
    ```bash
-   npm install
+   bun install
    ```
 
 3. **Build the project:**
 
    ```bash
-   npm run build
+   bun run build:chrome
    ```
 
 4. **Load the extension in Chrome:**
