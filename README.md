@@ -69,7 +69,10 @@ The primary purpose of this extension is to help developers working with React b
 
 ## 📸 Screenshots
 
-![Extension Screenshot](img/ss.png)
+![Extension Screenshot](img/1.png)
+![Extension Screenshot](img/2.png)
+![Extension Screenshot](img/3.png)
+![Extension Screenshot](img/4.png)
 
 ## 👨‍💻 Author
 
@@ -77,10 +80,6 @@ The primary purpose of this extension is to help developers working with React b
 
 - GitHub: [birkankervan](https://github.com/birkankervan)
 - LinkedIn: [emre-birkan-kervan](https://www.linkedin.com/in/emre-birkan-kervan)
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## ⭐ Acknowledgements
 
