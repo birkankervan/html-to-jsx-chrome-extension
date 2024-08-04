@@ -1,7 +1,7 @@
 # HTML to JSX Chrome Extension
 
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
-![Version](https://img.shields.io/badge/version-1.0.16-brightgreen.svg)
+![Version](https://img.shields.io/badge/version-1.0.20-brightgreen.svg)
+<a href="https://www.buymeacoffee.com/ebirkan" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 20px !important;width: 120px !important;" ></a>
 
 ## 📖 Overview
 
