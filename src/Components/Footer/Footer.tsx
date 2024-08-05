@@ -12,6 +12,18 @@ const Footer = () => {
         <GithubIcon />
       </a>
       <a
+        href="https://www.producthunt.com/posts/html-to-jsx-converter?embed=true&utm_source=badge-featured&utm_medium=badge&utm_souce=badge-html-to-jsx-converter"
+        target="_blank"
+      >
+        <img
+          src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=476506&theme=neutral"
+          alt="HTML to JSX Converter - Easily convert HTML to JSX website and chrome extension | Product Hunt"
+          className="w-36"
+          width="250"
+          height="54"
+        />
+      </a>
+      <a
         href="https://www.buymeacoffee.com/ebirkan"
         target="_blank"
         rel="noopener noreferrer"
@@ -20,7 +32,7 @@ const Footer = () => {
           src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png"
           alt="Buy Me A Coffee"
           height={20}
-          className="w-36"
+          className="w-28"
           loading="lazy"
         />
       </a>
