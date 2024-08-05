@@ -21,6 +21,7 @@ const Footer = () => {
           className="w-36"
           width="250"
           height="54"
+          loading="lazy"
         />
       </a>
       <a
